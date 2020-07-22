@@ -1,0 +1,20 @@
+.palindrome-list-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.palindrome-list-container li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.palindrome-list-container li span {
+    width: 50%;
+}

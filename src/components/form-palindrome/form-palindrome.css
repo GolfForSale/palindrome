@@ -1,0 +1,47 @@
+.form-palindrome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px auto;
+}
+.label-palindrome {
+    width: 100%;
+    color: #5b5b5b;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.label-palindrome input{
+    font-size: 1rem;
+    border: 2px solid #15a474;
+    border-radius: 10px;
+}
+
+.label-palindrome input:focus{
+    outline: none;
+}
+
+.check-text-button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    background:#222;
+    color:white;
+    font-size:1.3rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+
+.check-text-button:hover{
+    background: aquamarine;
+    color:#222;
+    cursor: pointer;
+}
+
+.check-text-button:active{
+    background:white;
+    color:#222;
+}

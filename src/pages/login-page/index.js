@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { checkAuthentication } from '../../utils';
+import "./login-page.css";
 
 const LoginPage = ({setAuthentication}) => {
     const [userData , setUserData] = useState({
@@ -24,16 +25,16 @@ const LoginPage = ({setAuthentication}) => {
     }
 
     return (
-        <form onSubmit={login}>
-            <label>
+        <form onSubmit={login} className="login-container">
+            <label className="label-container">
                 Login:
                 <input onChange = {handleChange} value={userData.login} type="text" name="login" />
             </label>
-            <label>
+            <label className="label-container">
                 Password:
-                <input  onChange = {handleChange}  value={userData.password} type="text" name="password" />
+                <input onChange = {handleChange}  value={userData.password} type="password" name="password" />
             </label>
-            <button type="submit">login</button>
+            <button type="submit"  className="login-submit">login</button>
         </form>
     )
 }
