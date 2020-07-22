@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import palindromeSlice from '../pages/palindrome-page/palindromeSlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    palindromesList: palindromeSlice,
   },
 });
