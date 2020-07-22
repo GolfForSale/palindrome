@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
+import defaultPalindromes from '../../defaultPalindromes.json'
 
 export const palindromeSlice = createSlice({
   name: 'palindromes',
-  initialState: [],
+  initialState: defaultPalindromes,
   reducers: {
     updateList: (state, action) => {
         console.log(action)

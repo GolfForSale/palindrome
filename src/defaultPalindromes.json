@@ -1,0 +1,22 @@
+[
+    {
+        "text": "kajak",
+        "isTextPalindrome": "true"
+    },
+    {
+        "text": "aaa",
+        "isTextPalindrome": "true"
+    },
+    {
+        "text": "test",
+        "isTextPalindrome": "false"
+    },
+    {
+        "text": "react",
+        "isTextPalindrome": "false"
+    },
+    {
+        "text": "piwo",
+        "isTextPalindrome": "false"
+    }
+]

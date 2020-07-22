@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import pageConsts from '../../pageConsts';
-import users from '../../users.json'
+import { checkAuthentication } from '../../utils';
 
-const LoginPage = ({setPage}) => {
+const LoginPage = ({setAuthentication}) => {
     const [userData , setUserData] = useState({
         login : "",
         password : ""
@@ -10,9 +9,9 @@ const LoginPage = ({setPage}) => {
 
     const login = (event) => {
         event.preventDefault()
-        const isAuthenticated = users.some(user => user.login === userData.login && user.password === userData.password)
+        const isAuthenticated = checkAuthentication(userData)
         if(isAuthenticated) {
-            setPage(pageConsts.palindromePage)
+            setAuthentication(true)
         }
     }
 
@@ -34,7 +33,6 @@ const LoginPage = ({setPage}) => {
                 Password:
                 <input  onChange = {handleChange}  value={userData.password} type="text" name="password" />
             </label>
-            {/* <input type="submit" value="Wyślij" /> */}
             <button type="submit">login</button>
         </form>
     )
